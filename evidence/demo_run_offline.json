@@ -1,0 +1,225 @@
+{
+  "requested_location": "São Paulo, São Paulo, Brasil",
+  "observation": {
+    "source": "Open-Meteo (fixture demonstrativa)",
+    "source_url": "https://open-meteo.com/en/docs",
+    "location": "São Paulo, São Paulo, Brasil",
+    "latitude": -23.55,
+    "longitude": -46.63,
+    "observed_at": "2026-08-18T12:00",
+    "temperature_c": 20.4,
+    "precipitation_mm": 18.0,
+    "wind_speed_kmh": 22.0,
+    "wind_gust_kmh": 34.0,
+    "precipitation_probability": 82,
+    "weather_code": 63,
+    "raw": {
+      "fixture": true,
+      "scenario": "chuva_intensa"
+    }
+  },
+  "event": {
+    "event_type": "chuva_intensa",
+    "severity": "moderada",
+    "relevance": true,
+    "justification": "Precipitação atual igual ou superior a 10 mm ou probabilidade igual ou superior a 70%.",
+    "indicators": {
+      "precipitation_mm": 18.0,
+      "precipitation_probability": 82,
+      "wind_gust_kmh": 34.0,
+      "weather_code": 63
+    }
+  },
+  "decisions": [
+    {
+      "profile": {
+        "profile_id": "P001",
+        "name": "Ana",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "residencial",
+        "channel": "email",
+        "consent": true,
+        "contact": "ana.sintetica@example.com"
+      },
+      "status": "elegivel",
+      "reasons": [
+        "localidade, produto, consentimento e canal compatíveis"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P002",
+        "name": "Carlos",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "automovel",
+        "channel": "sms",
+        "consent": true,
+        "contact": "+5511999990002"
+      },
+      "status": "bloqueado",
+      "reasons": [
+        "produto sem relação com o evento"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P003",
+        "name": "Mariana",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "residencial",
+        "channel": "push",
+        "consent": true,
+        "contact": "device-token-sintetico-003"
+      },
+      "status": "elegivel",
+      "reasons": [
+        "localidade, produto, consentimento e canal compatíveis"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P004",
+        "name": "Bruno",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "empresarial",
+        "channel": "email",
+        "consent": true,
+        "contact": "bruno.sintetico@example.com"
+      },
+      "status": "elegivel",
+      "reasons": [
+        "localidade, produto, consentimento e canal compatíveis"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P005",
+        "name": "Luiza",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "residencial",
+        "channel": "email",
+        "consent": false,
+        "contact": "luiza.sintetica@example.com"
+      },
+      "status": "bloqueado",
+      "reasons": [
+        "consentimento inativo"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P006",
+        "name": "Diego",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "product": "residencial",
+        "channel": "email",
+        "consent": true,
+        "contact": "diego.sintetico@example.com"
+      },
+      "status": "elegivel",
+      "reasons": [
+        "localidade, produto, consentimento e canal compatíveis"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P007",
+        "name": "Renata",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "vida",
+        "channel": "email",
+        "consent": true,
+        "contact": "renata.sintetica@example.com"
+      },
+      "status": "bloqueado",
+      "reasons": [
+        "produto sem relação com o evento"
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "profile_id": "P001",
+      "channel": "email",
+      "recipient": "ana.sintetica@example.com",
+      "text": "Olá, Ana. Verifique calhas, ralos e áreas externas e acompanhe os comunicados oficiais diante da previsão de chuva intensa em sua região. Esta é uma orientação preventiva.",
+      "provider": "template-offline",
+      "model": "guardrail-template-v1",
+      "generated_at": "2026-08-18T17:28:15+00:00"
+    },
+    {
+      "profile_id": "P003",
+      "channel": "push",
+      "recipient": "device-token-sintetico-003",
+      "text": "Olá, Mariana. Verifique calhas, ralos e áreas externas e acompanhe os comunicados oficiais diante da previsão de chuva intensa em sua região. Esta é uma orientação preventiva.",
+      "provider": "template-offline",
+      "model": "guardrail-template-v1",
+      "generated_at": "2026-08-18T17:28:15+00:00"
+    },
+    {
+      "profile_id": "P004",
+      "channel": "email",
+      "recipient": "bruno.sintetico@example.com",
+      "text": "Olá, Bruno. Verifique calhas, ralos e áreas externas e acompanhe os comunicados oficiais diante da previsão de chuva intensa em sua região. Esta é uma orientação preventiva.",
+      "provider": "template-offline",
+      "model": "guardrail-template-v1",
+      "generated_at": "2026-08-18T17:28:15+00:00"
+    },
+    {
+      "profile_id": "P006",
+      "channel": "email",
+      "recipient": "diego.sintetico@example.com",
+      "text": "Olá, Diego. Verifique calhas, ralos e áreas externas e acompanhe os comunicados oficiais diante da previsão de chuva intensa em sua região. Esta é uma orientação preventiva.",
+      "provider": "template-offline",
+      "model": "guardrail-template-v1",
+      "generated_at": "2026-08-18T17:28:15+00:00"
+    }
+  ],
+  "simulations": [
+    {
+      "simulation_id": "SIM-36BA4CC1C1",
+      "profile_id": "P001",
+      "channel": "email",
+      "recipient": "ana.sintetica@example.com",
+      "text": "Olá, Ana. Verifique calhas, ralos e áreas externas e acompanhe os comunicados oficiais diante da previsão de chuva intensa em sua região. Esta é uma orientação preventiva.",
+      "status": "SIMULADO — nenhuma comunicação real foi disparada",
+      "created_at": "2026-08-18T17:28:15+00:00"
+    },
+    {
+      "simulation_id": "SIM-C50D91523F",
+      "profile_id": "P003",
+      "channel": "push",
+      "recipient": "device-token-sintetico-003",
+      "text": "Olá, Mariana. Verifique calhas, ralos e áreas externas e acompanhe os comunicados oficiais diante da previsão de chuva intensa em sua região. Esta é uma orientação preventiva.",
+      "status": "SIMULADO — nenhuma comunicação real foi disparada",
+      "created_at": "2026-08-18T17:28:15+00:00"
+    },
+    {
+      "simulation_id": "SIM-115E8ECAD6",
+      "profile_id": "P004",
+      "channel": "email",
+      "recipient": "bruno.sintetico@example.com",
+      "text": "Olá, Bruno. Verifique calhas, ralos e áreas externas e acompanhe os comunicados oficiais diante da previsão de chuva intensa em sua região. Esta é uma orientação preventiva.",
+      "status": "SIMULADO — nenhuma comunicação real foi disparada",
+      "created_at": "2026-08-18T17:28:15+00:00"
+    },
+    {
+      "simulation_id": "SIM-CD1F17D6E2",
+      "profile_id": "P006",
+      "channel": "email",
+      "recipient": "diego.sintetico@example.com",
+      "text": "Olá, Diego. Verifique calhas, ralos e áreas externas e acompanhe os comunicados oficiais diante da previsão de chuva intensa em sua região. Esta é uma orientação preventiva.",
+      "status": "SIMULADO — nenhuma comunicação real foi disparada",
+      "created_at": "2026-08-18T17:28:15+00:00"
+    }
+  ],
+  "execution_started_at": "2026-08-18T17:28:15+00:00",
+  "execution_finished_at": "2026-08-18T17:28:15+00:00"
+}

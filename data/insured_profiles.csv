@@ -1,0 +1,22 @@
+profile_id,name,city,state,product,channel,consent,contact
+P001,Ana,São Paulo,SP,residencial,email,true,ana.sintetica@example.com
+P002,Carlos,São Paulo,SP,automovel,sms,true,+5511999990002
+P003,Mariana,São Paulo,SP,residencial,push,true,device-token-sintetico-003
+P004,Bruno,Rio de Janeiro,RJ,empresarial,email,true,bruno.sintetico@example.com
+P005,Luiza,Salvador,BA,residencial,email,false,luiza.sintetica@example.com
+P006,Diego,Porto Alegre,RS,residencial,email,true,diego.sintetico@example.com
+P007,Renata,São Joaquim,SC,vida,email,true,renata.sintetica@example.com
+P008,Eliezer Henrique,São Paulo,SP,residencial,email,true,marketing.eliezer@gmail.com
+P009,Eliezer Henrique,São Paulo,SP,automovel,email,true,marketing.eliezer@gmail.com
+P010,Eliezer Henrique,São Paulo,SP,empresarial,email,true,marketing.eliezer@gmail.com
+P011,Eliezer Henrique,São Paulo,SP,vida,email,true,marketing.eliezer@gmail.com
+P012,Adelson N. de Almeida,Rio de Janeiro,RJ,residencial,email,true,naortier@gmail.com
+P013,Adelson N. de Almeida,Rio de Janeiro,RJ,empresarial,email,true,naortier@gmail.com
+P014,Daniel Correa Rodrigues,Salvador,BA,automovel,email,true,daniellcrsg10@gmail.com
+P015,Daniel Correa Rodrigues,Salvador,BA,vida,email,true,daniellcrsg10@gmail.com
+P016,Denis Barreira Batista,Porto Alegre,RS,residencial,email,true,denis.batista@susep.gov.br
+P017,Denis Barreira Batista,Porto Alegre,RS,vida,email,true,denis.batista@susep.gov.br
+P018,Sami Knoblich Goldstein,São Joaquim,SC,empresarial,email,true,samikgoldstein@gmail.com
+P019,Sami Knoblich Goldstein,São Joaquim,SC,automovel,email,true,samikgoldstein@gmail.com
+P020,Mariana Bitencourt,São Paulo,SP,residencial,email,true,bittencrout_18@hotmail.com
+P021,Mariana Bitencourt,São Paulo,SP,vida,email,true,bittencrout_18@hotmail.com

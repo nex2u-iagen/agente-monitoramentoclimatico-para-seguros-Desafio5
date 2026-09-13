@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.DS_Store
+*.log
+
+# Saídas locais geradas durante execução
+.evidence-local/
+
+# Banco de dados SQLite (gerado via seed)
+data/*.db
+data/*.db-shm
+data/*.db-wal

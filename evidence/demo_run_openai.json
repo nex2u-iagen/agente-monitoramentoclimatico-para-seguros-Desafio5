@@ -1,0 +1,225 @@
+{
+  "requested_location": "São Paulo, São Paulo, Brasil",
+  "observation": {
+    "source": "Open-Meteo (fixture demonstrativa)",
+    "source_url": "https://open-meteo.com/en/docs",
+    "location": "São Paulo, São Paulo, Brasil",
+    "latitude": -23.55,
+    "longitude": -46.63,
+    "observed_at": "2026-08-18T12:00",
+    "temperature_c": 20.4,
+    "precipitation_mm": 18.0,
+    "wind_speed_kmh": 22.0,
+    "wind_gust_kmh": 34.0,
+    "precipitation_probability": 82,
+    "weather_code": 63,
+    "raw": {
+      "fixture": true,
+      "scenario": "chuva_intensa"
+    }
+  },
+  "event": {
+    "event_type": "chuva_intensa",
+    "severity": "moderada",
+    "relevance": true,
+    "justification": "Precipitação atual igual ou superior a 10 mm ou probabilidade igual ou superior a 70%.",
+    "indicators": {
+      "precipitation_mm": 18.0,
+      "precipitation_probability": 82,
+      "wind_gust_kmh": 34.0,
+      "weather_code": 63
+    }
+  },
+  "decisions": [
+    {
+      "profile": {
+        "profile_id": "P001",
+        "name": "Ana",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "residencial",
+        "channel": "email",
+        "consent": true,
+        "contact": "ana.sintetica@example.com"
+      },
+      "status": "elegivel",
+      "reasons": [
+        "localidade, produto, consentimento e canal compatíveis"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P002",
+        "name": "Carlos",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "automovel",
+        "channel": "sms",
+        "consent": true,
+        "contact": "+5511999990002"
+      },
+      "status": "bloqueado",
+      "reasons": [
+        "produto sem relação com o evento"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P003",
+        "name": "Mariana",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "residencial",
+        "channel": "push",
+        "consent": true,
+        "contact": "device-token-sintetico-003"
+      },
+      "status": "elegivel",
+      "reasons": [
+        "localidade, produto, consentimento e canal compatíveis"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P004",
+        "name": "Bruno",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "empresarial",
+        "channel": "email",
+        "consent": true,
+        "contact": "bruno.sintetico@example.com"
+      },
+      "status": "elegivel",
+      "reasons": [
+        "localidade, produto, consentimento e canal compatíveis"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P005",
+        "name": "Luiza",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "residencial",
+        "channel": "email",
+        "consent": false,
+        "contact": "luiza.sintetica@example.com"
+      },
+      "status": "bloqueado",
+      "reasons": [
+        "consentimento inativo"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P006",
+        "name": "Diego",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "product": "residencial",
+        "channel": "email",
+        "consent": true,
+        "contact": "diego.sintetico@example.com"
+      },
+      "status": "elegivel",
+      "reasons": [
+        "localidade, produto, consentimento e canal compatíveis"
+      ]
+    },
+    {
+      "profile": {
+        "profile_id": "P007",
+        "name": "Renata",
+        "city": "São Paulo",
+        "state": "SP",
+        "product": "vida",
+        "channel": "email",
+        "consent": true,
+        "contact": "renata.sintetica@example.com"
+      },
+      "status": "bloqueado",
+      "reasons": [
+        "produto sem relação com o evento"
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "profile_id": "P001",
+      "channel": "email",
+      "recipient": "ana.sintetica@example.com",
+      "text": "Olá Ana, há previsão de chuva intensa em São Paulo/SP. Para proteger sua residência, verifique e limpe calhas e ralos, guarde ou prenda objetos soltos na área externa, evite estacionar próximo a árvores ou locais que alagam, mantenha aparelhos eletrônicos e documentos em locais elevados e o celular carregado, e não circule por vias alagadas. Siga as orientações das autoridades locais e mantenha-se em lugar seguro.",
+      "provider": "openai-compatible",
+      "model": "gpt-5-mini",
+      "generated_at": "2026-08-18T17:26:28+00:00"
+    },
+    {
+      "profile_id": "P003",
+      "channel": "push",
+      "recipient": "device-token-sintetico-003",
+      "text": "Mariana, há previsão de chuva intensa em São Paulo/SP. Para reduzir riscos: limpe calhas e ralos, guarde ou prenda objetos soltos, proteja eletrônicos e documentos em local alto e seco, verifique telhado e vedações e evite transitar por áreas alagadas. Em caso de emergência, acione os serviços de emergência locais.",
+      "provider": "openai-compatible",
+      "model": "gpt-5-mini",
+      "generated_at": "2026-08-18T17:26:38+00:00"
+    },
+    {
+      "profile_id": "P004",
+      "channel": "email",
+      "recipient": "bruno.sintetico@example.com",
+      "text": "Bruno, em São Paulo/SP há previsão de chuva intensa. Para reduzir riscos ao seu estabelecimento, verifique calhas e ralos, eleve e proteja equipamentos e documentos sensíveis e fixe materiais soltos no exterior. Evite deslocamentos não essenciais, acompanhe as atualizações meteorológicas e registre por foto qualquer dano, se ocorrer.",
+      "provider": "openai-compatible",
+      "model": "gpt-5-mini",
+      "generated_at": "2026-08-18T17:26:49+00:00"
+    },
+    {
+      "profile_id": "P006",
+      "channel": "email",
+      "recipient": "diego.sintetico@example.com",
+      "text": "Diego, há previsão de chuva intensa no Rio de Janeiro/RJ. Para reduzir riscos em sua residência: verifique e limpe calhas e ralos, afaste ou prenda objetos soltos na área externa, proteja equipamentos elétricos elevando-os quando possível, evite transitar por áreas alagadas e mantenha-se atento às orientações dos órgãos oficiais. Priorize a segurança da sua família.",
+      "provider": "openai-compatible",
+      "model": "gpt-5-mini",
+      "generated_at": "2026-08-18T17:26:58+00:00"
+    }
+  ],
+  "simulations": [
+    {
+      "simulation_id": "SIM-68E791864E",
+      "profile_id": "P001",
+      "channel": "email",
+      "recipient": "ana.sintetica@example.com",
+      "text": "Olá Ana, há previsão de chuva intensa em São Paulo/SP. Para proteger sua residência, verifique e limpe calhas e ralos, guarde ou prenda objetos soltos na área externa, evite estacionar próximo a árvores ou locais que alagam, mantenha aparelhos eletrônicos e documentos em locais elevados e o celular carregado, e não circule por vias alagadas. Siga as orientações das autoridades locais e mantenha-se em lugar seguro.",
+      "status": "SIMULADO — nenhuma comunicação real foi disparada",
+      "created_at": "2026-08-18T17:26:28+00:00"
+    },
+    {
+      "simulation_id": "SIM-7F0B5BEF45",
+      "profile_id": "P003",
+      "channel": "push",
+      "recipient": "device-token-sintetico-003",
+      "text": "Mariana, há previsão de chuva intensa em São Paulo/SP. Para reduzir riscos: limpe calhas e ralos, guarde ou prenda objetos soltos, proteja eletrônicos e documentos em local alto e seco, verifique telhado e vedações e evite transitar por áreas alagadas. Em caso de emergência, acione os serviços de emergência locais.",
+      "status": "SIMULADO — nenhuma comunicação real foi disparada",
+      "created_at": "2026-08-18T17:26:38+00:00"
+    },
+    {
+      "simulation_id": "SIM-A3F3395442",
+      "profile_id": "P004",
+      "channel": "email",
+      "recipient": "bruno.sintetico@example.com",
+      "text": "Bruno, em São Paulo/SP há previsão de chuva intensa. Para reduzir riscos ao seu estabelecimento, verifique calhas e ralos, eleve e proteja equipamentos e documentos sensíveis e fixe materiais soltos no exterior. Evite deslocamentos não essenciais, acompanhe as atualizações meteorológicas e registre por foto qualquer dano, se ocorrer.",
+      "status": "SIMULADO — nenhuma comunicação real foi disparada",
+      "created_at": "2026-08-18T17:26:49+00:00"
+    },
+    {
+      "simulation_id": "SIM-C81305D572",
+      "profile_id": "P006",
+      "channel": "email",
+      "recipient": "diego.sintetico@example.com",
+      "text": "Diego, há previsão de chuva intensa no Rio de Janeiro/RJ. Para reduzir riscos em sua residência: verifique e limpe calhas e ralos, afaste ou prenda objetos soltos na área externa, proteja equipamentos elétricos elevando-os quando possível, evite transitar por áreas alagadas e mantenha-se atento às orientações dos órgãos oficiais. Priorize a segurança da sua família.",
+      "status": "SIMULADO — nenhuma comunicação real foi disparada",
+      "created_at": "2026-08-18T17:26:58+00:00"
+    }
+  ],
+  "execution_started_at": "2026-08-18T17:26:16+00:00",
+  "execution_finished_at": "2026-08-18T17:26:58+00:00"
+}
